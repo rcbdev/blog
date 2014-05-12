@@ -5,7 +5,7 @@ date:   2013-03-10
 categories: Reflection
 ---
 
-I’ve written a couple of posts already on the generic data set filterer, the initial introductory post ([http://rcbdev.co.uk/filtering-reflection-net-1](http://rcbdev.co.uk/filtering-reflection-net-1)) and details on how to add excluded properties and display names to the property finding method ([http://rcbdev.co.uk/filtering-reflection-net-2](http://rcbdev.co.uk/filtering-reflection-net-2)). This post will show you how easy it is to now convert the filter method into an extension method. Currently, the way we call the filterer is not very natural, and the filter method feels like a third party citizen. By converting the method into an extension method, we can promote this method so that it appears as a first class method. The code snippet below demonstrates the difference.
+I’ve written a couple of posts already on the generic data set filterer, the initial introductory post ([{% post_url 2013-01-26-filtering-reflection-net-1 %}]({% post_url 2013-01-26-filtering-reflection-net-1 %})) and details on how to add excluded properties and display names to the property finding method ([{% post_url 2013-02-09-filtering-reflection-net-2 %}]({% post_url 2013-02-09-filtering-reflection-net-2 %})). This post will show you how easy it is to now convert the filter method into an extension method. Currently, the way we call the filterer is not very natural, and the filter method feels like a third party citizen. By converting the method into an extension method, we can promote this method so that it appears as a first class method. The code snippet below demonstrates the difference.
 
 {% highlight csharp %}
 // Normal method
