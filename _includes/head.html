@@ -4,6 +4,12 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
+    <meta name="application-name" content="{{ site.title }}"/>
+    <meta name="msapplication-TileColor" content="#0059a6"/>
+    <meta name="msapplication-square70x70logo" content="images\tiny-tile.png"/>
+    <meta name="msapplication-square150x150logo" content="images\square-tile.png"/>
+    <meta name="msapplication-wide310x150logo" content="images\wide-tile.png"/>
+    <meta name="msapplication-square310x310logo" content="images\large-tile.png"/>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom CSS -->
