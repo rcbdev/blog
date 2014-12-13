@@ -225,6 +225,12 @@ a:visited { color: #205caa; }
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post-content img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
 .post pre,
 .post code {
   border: 1px solid #ccc;
