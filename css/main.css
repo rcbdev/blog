@@ -357,7 +357,7 @@ a:visited { color: #205caa; }
 
   .wrap { padding: 0 12px; }
 
-  .site-nav {
+  /*.site-nav {
     position: fixed;
     z-index: 10;
     top: 14px; right: 8px;
@@ -394,7 +394,7 @@ a:visited { color: #205caa; }
     line-height: 1.25;
     padding: 5px 10px;
     margin: 0;
-  }
+  }*/
 
   .post-header h1 { font-size: 36px; }
   .post-content h2 { font-size: 28px; }
