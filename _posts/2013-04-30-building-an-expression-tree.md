@@ -3,6 +3,7 @@ layout: post
 title:  "Building an Expression Tree"
 date:   2013-04-30
 categories: Expression
+comments: true
 ---
 
 Expressions are key to a few areas of the .Net framework, and extensions to the framework. IQueryables, and frameworks that use them (like Entity Framework), make extensive use of them in order to convert your LINQ queries into another language (e.g. converting a .Where() into a SQL WHERE clause). MVC’s HTML helpers also use Expressions in order to understand the properties you want to display labels, inputs, e.t.c. for, and pull out key information about them (like validation, display names).

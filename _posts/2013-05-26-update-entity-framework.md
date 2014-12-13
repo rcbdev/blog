@@ -3,6 +3,7 @@ layout: post
 title:  "Update Without Selecting With Entity Framework"
 date:   2013-05-26
 categories: Entity Framework
+comments: true
 ---
 
 When using Entity Framework (and other ORMs), updating an entity normally involves first querying the database to fetch the current entity. Sometimes this is less than ideal (e.g. when performing a bulk update), and it is desirable to be able to perform an update without having to first fetch entities from the database. Imagine a situation when a user selects a large set of items (e.g. orders), and and updates a single property on all the items (e.g. to mark the orders as complete). If we were to first fetch back all the orders from the database, have Entity Framework convert them to objects, update the status to say they are complete, and then update the entity in the database, this can take a large amount of time. What we ideally want to be able to do is the equivalent of what we would do when we write pure SQL, i.e.  `UPDATE [orders] SET [completed] = 1 WHERE [id] = @id`. This doesn’t require us to first find the entire order in the database, we already know its ID, so we just update the single value based on its ID. So how do we do this in Entity Framework?

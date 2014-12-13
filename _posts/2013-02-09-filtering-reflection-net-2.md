@@ -3,6 +3,7 @@ layout: post
 title:  "Filtering with Reflection in .NET - Exclusions and Display Names"
 date:   2013-02-09
 categories: Reflection
+comments: true
 ---
 
 In my first post on creating a generic filtering system in .net, I showed a basic example of how to get properties from a class, so that we can create a list of available properties to filter on. This method (shown below) was kept simplistic, and only returns the internal name of a property.

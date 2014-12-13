@@ -3,6 +3,7 @@ layout: post
 title:  "Native Development is Dead. Long Live Native Development!"
 date:   2014-12-06
 categories: Mobile
+comments: true
 ---
 
 Native development is dead. This may sound like a bold statement, but I believe it to be true, finally. The death of native mobile app development (and desktop development) has been touted for a long time now, but I feel it finally is coming to the point where traditional native mobile app development can no longer be recommended. The reason for this? Xamarin.
