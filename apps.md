@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Apps
 permalink: /apps/
 ---
@@ -29,7 +28,7 @@ Future features:
  * Read the latest news
  * Register plays of games
  * Browse game categories
- 
+
 [![Download BoardGameGeek](/images/WP-Download.png)](http://www.windowsphone.com/s?appid=196407b4-58b3-4812-9537-c7fe6ff8af37)
 
 ## Long Shot

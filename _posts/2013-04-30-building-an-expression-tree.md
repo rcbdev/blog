@@ -1,9 +1,7 @@
 ---
-layout: post
 title:  "Building an Expression Tree"
 date:   2013-04-30
 categories: Expression
-comments: true
 ---
 
 Expressions are key to a few areas of the .Net framework, and extensions to the framework. IQueryables, and frameworks that use them (like Entity Framework), make extensive use of them in order to convert your LINQ queries into another language (e.g. converting a .Where() into a SQL WHERE clause). MVC’s HTML helpers also use Expressions in order to understand the properties you want to display labels, inputs, e.t.c. for, and pull out key information about them (like validation, display names).
@@ -22,35 +20,35 @@ Lambdas will be suitable for the majority of use cases you come across. However,
 // Create the parameter "s", that we pass into the lambda (s => ...)
 // The first parameter is the type, the second is the name
 var parameter = Expression.Parameter(typeof(string), "s");
- 
+
 // Create the constant "a", that we use in the Contains("a") call
 // The first parameter is the value, the second is the type
 var stringConstant = Expression.Constant("a", typeof(string));
- 
+
 // Create the constant "5", that we use in the Length > 5 check
 // The first parameter is the value, the second is the type
 var intConstant = Expression.Constant(5, typeof(int));
- 
+
 // Create the call of s.Contains("a")
 // The first parameter is the object to call a method on
 // The second is the name of the method to call
 // The third is a type array (used for generic methods)
 // The other parameters are the objects to pass into the method being called
 var contains = Expression.Call(parameter, "Contains", Type.EmptyTypes, stringConstant);
- 
+
 // Get the property "Length" on our parameter
 // The first parameter is the object to get the property on
 // The second is the name of the property
 var lengthProperty = Expression.Property(parameter, "Length");
- 
+
 // Create the greater than comparison (s.Length > 5)
 // The parameters are left and right hand side of comparison
 var greaterThan = Expression.GreaterThan(lengthProperty, intConstant);
- 
+
 // Create the overall body of the expression (s.Contains("a") && s.Length >5)
 // The parameters are left and right of the and
 var andExpression = Expression.And(contains, greaterThan);
- 
+
 // Finally, create the lambda (s => s.Contains("a") && s.Length > 5)
 // The first parameter is the expression body, the second is the parameter
 var expression = Expression.Lambda<Func<string, bool>>(andExpression, new []{ parameter });

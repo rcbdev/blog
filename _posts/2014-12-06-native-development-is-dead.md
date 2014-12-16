@@ -1,9 +1,7 @@
 ---
-layout: post
 title:  "Native Development is Dead. Long Live Native Development!"
 date:   2014-12-06
 categories: Mobile
-comments: true
 ---
 
 Native development is dead. This may sound like a bold statement, but I believe it to be true, finally. The death of native mobile app development (and desktop development) has been touted for a long time now, but I feel it finally is coming to the point where traditional native mobile app development can no longer be recommended. The reason for this? Xamarin.
@@ -14,6 +12,6 @@ Having worked with Xamarin for some time now, I would not develop apps using Obj
 
 Xamarin allows you to develop true native apps for Android and iPhone, alongside Windows 8 and Windows Phone, using C# and the .NET Framework. In addition, they allow you to share your C# code between all these platforms through portable class libraries and shared projects. This allows a huge amount of your code to be shared between platforms, meaning when you inevitably decide to make your application cross platform, the amount of work required is mainly limited to user interface design.
 
-Because Xamarin compiles your app to a native app for each platform, there is no limitation on the performance as there is on a hybrid PhoneGap app. This means your users won't even realise they're not on a natively developed app! There really is no reason not to check out Xamarin for you next app and prepare yourself for the increasingly cross platform world out there. 
+Because Xamarin compiles your app to a native app for each platform, there is no limitation on the performance as there is on a hybrid PhoneGap app. This means your users won't even realise they're not on a natively developed app! There really is no reason not to check out Xamarin for you next app and prepare yourself for the increasingly cross platform world out there.
 
 To find out more of what Xamarin offers and try it out yourself, check out [xamarin.com](http://xamarin.com).
