@@ -1,6 +1,7 @@
 ---
 title: Apps
 permalink: /apps/
+description: Apps I have created. Overview of the apps and links to download them from their respective stores.
 ---
 
 ## LockCycle
