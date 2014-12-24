@@ -2,6 +2,7 @@
 title:  "Custom HTML Helpers in ASP.NET MVC"
 date:   2013-01-31
 categories: MVC
+description: Are you looking to create an HTML Helper in ASP.NET MVC? This blog post shows you how to create an HTML Helper and how to use it.
 ---
 
 HTML helpers are a really useful feature in ASP.NET MVC. They allow for commonly used sections of mark-up to be generated and reused, helping you with generating items like inputs, forms, e.t.c. By default, there are a reasonable range of helpers built in to MVC, however at times it’s useful to be able to generate your own. If, for example, you find yourself making a large number of navigation links with the same class, and logic to check if you are currently on that page, why not move all this into a helper?

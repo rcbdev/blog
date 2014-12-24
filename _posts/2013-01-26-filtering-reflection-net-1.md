@@ -2,6 +2,7 @@
 title:  "Filtering with Reflection in .NET"
 date:   2013-01-26
 categories: Reflection
+description: Are you looking to create a flexible filtering system for you data? This blog post describes how that can be achieved in .NET using reflection.
 ---
 
 Reflection is possibly one of the most powerful tools available in the .net framework. It allows you to dynamically fetch information about types and properties, and their values, at runtime. This can allow you to produce extremely powerful features without having to write a huge amount of code. One example of this is a filtering system, which can be made generic to any type, and provide the entire filtering system without having to manually code for specific property names.

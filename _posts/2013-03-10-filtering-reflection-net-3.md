@@ -2,6 +2,7 @@
 title:  "Filtering with Reflection in .NET - Extension Method"
 date:   2013-03-10
 categories: Reflection
+description: The third part of a series on generic data filtering in .NET. This post shows you how to turn your method into an extension method.
 ---
 
 I’ve written a couple of posts already on the generic data set filterer, the initial introductory post ([Filtering with Reflection in .NET]({% post_url 2013-01-26-filtering-reflection-net-1 %})) and details on how to add excluded properties and display names to the property finding method ([Filtering with Reflection in .NET - Exclusions and Display Names]({% post_url 2013-02-09-filtering-reflection-net-2 %})). This post will show you how easy it is to now convert the filter method into an extension method. Currently, the way we call the filterer is not very natural, and the filter method feels like a third party citizen. By converting the method into an extension method, we can promote this method so that it appears as a first class method. The code snippet below demonstrates the difference.

@@ -2,6 +2,7 @@
 title: "How it Works: IoC Containers"
 date: 2014-12-24
 categories: IoC
+description: Have you wondered how an IoC container works? This post looks at how a simple IoC container functions, and what might go wrong when you are using one.
 ---
 
 As developers, we often use powerful frameworks and tools that allow us to do complex operations without a large amount of work. These simplify the job of making large applications, and help us to produce more maintainable and efficient systems. However, when one of these frameworks breaks or goes wrong, it can be a nightmare to debug and fix the issue. This is why it's important to understand how these frameworks we use actually work. One such area is inversion of control (or IoC) containers.
