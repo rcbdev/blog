@@ -18,9 +18,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-family: 'Quicksand', Helvetica, Arial, sans-serif; }
 
-a         { color: #2a7ae2; text-decoration: none; }
-a:hover   { color: #000; text-decoration: underline; }
-a:visited { color: #205caa; }
+a         { color: #82bfe6; text-decoration: none; }
+a:hover   { color: #000; }
+a:visited { color: #6899B8; }
 
 /* Utility */
 
