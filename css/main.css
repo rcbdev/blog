@@ -16,7 +16,7 @@ body {
   background-color: #fdfdfd;
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; font-family: 'Quicksand', Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-family: 'Quicksand', Helvetica, Arial, sans-serif; }
 
 a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
@@ -84,7 +84,6 @@ a:visited { color: #205caa; }
 
 .footer-heading {
   font-size: 18px;
-  font-weight: 300;
   letter-spacing: -.5px;
   margin-bottom: 15px;
 }
@@ -177,7 +176,6 @@ a:visited { color: #205caa; }
   font-size: 42px;
   letter-spacing: -1.75px;
   line-height: 1;
-  font-weight: 300;
 }
 
 .post-header .meta {
@@ -199,7 +197,6 @@ a:visited { color: #205caa; }
 .post-content h5,
 .post-content h6 {
   line-height: 1;
-  font-weight: 300;
   margin: 40px 0 20px;
 }
 
