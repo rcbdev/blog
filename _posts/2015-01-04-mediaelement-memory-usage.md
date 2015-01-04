@@ -1,5 +1,5 @@
 ---
-title:  "Filtering with Reflection in .NET - Extension Method"
+title:  "Efficient Memory Usage with MediaElement"
 date:   2015-01-04
 categories: WinRT
 description: Efficient memory usage with MediaElement on Windows 8. Why your app is using more memory than it should be and how to fix it.
