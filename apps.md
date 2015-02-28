@@ -12,6 +12,7 @@ Game TV is an unofficial Twitch app providing you with access to all your favour
 Game TV is currently in beta, and new features will be added over time. Please provide feedback if you are having any issues with the app, or have any suggestions for improvements and added features.
 
 Current features:
+
  * View current top games and their streams
  * View current featured streams on Twitch
  * View top, most watched Twitch streams
@@ -20,6 +21,7 @@ Current features:
  * Full screen stream (hold your device in landscape)
 
 Coming Soon:
+
  * Infinite scrolling - find that one stream or game you're looking for
  * Chat support on streams
  * Support for account logins and features such as subscriptions
