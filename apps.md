@@ -19,10 +19,10 @@ Current features:
  * Search for streams from your favourite streamers or games
  * Choose a preferred quality, and switch quality when you are watching a stream
  * Full screen stream (hold your device in landscape)
+ * Infinite scrolling - find that one stream or game you're looking for
 
 Coming Soon:
 
- * Infinite scrolling - find that one stream or game you're looking for
  * Chat support on streams
  * Support for account logins and features such as subscriptions
  * Integration with Cortana
