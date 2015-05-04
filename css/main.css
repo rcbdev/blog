@@ -248,6 +248,12 @@ article img {
 	margin: auto;
 }
 
+/* Syntax Highlighting Styles */
+
+.highlight { 
+	background: #ffffff;
+  margin: 20px 0;
+}
 
 main.post pre, main.post code {
   border: 1px solid #ccc;
@@ -263,10 +269,6 @@ main.post code { padding: 1px 5px; }
 
 main.post pre code { border: none; }
 
-
-/* Syntax Highlighting Styles */
-
-.highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
