@@ -10,6 +10,12 @@ layout: default
 			</article>
 {% endfor %}
 {% if paginator.total_pages > 1 %}
+			<nav>
+				<a href="#">&lt;&lt;</a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">&gt;&gt;</a>
     <nav>
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
