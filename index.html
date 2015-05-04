@@ -1,26 +1,27 @@
 ---
 layout: default
 ---
-<main role="main" class="posts">
-{% for post in paginator.posts %}
-			<article>
-				<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }</a></h2>
-				<time datetime="{{ post.date | date: '%F' }}">Jan 25, 2015</time>
-				<p>{{ post.excerpt }}</p>
-			</article>
-{% endfor %}
-{% if paginator.total_pages > 1 %}
-			<nav>
-				<a href="#">&lt;&lt;</a>
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">&gt;&gt;</a>
-    <nav>
+
+<div class="home">
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <p class="post-content">{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  {% if paginator.total_pages > 1 %}
+    <div class="pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
       {% else %}
-        <span>&laquo;</span>
+        <span>&laquo; Prev</span>
       {% endif %}
 
       {% for page in (1..paginator.total_pages) %}
@@ -34,10 +35,13 @@ layout: default
       {% endfor %}
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
       {% else %}
-        <span>&raquo;</span>
+        <span>Next &raquo;</span>
       {% endif %}
-	</nav>
-{% endif %}
-</main>
+    </div>
+  {% endif %}
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

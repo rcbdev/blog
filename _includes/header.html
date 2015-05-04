@@ -1,14 +1,19 @@
-<header>
-  <div>
-    <h1>
-      <a href={{ site.baseurl }}/ "><span>RCB</span>Dev</a>
-    </h1>
-    <nav>
-      {% for page in site.pages %}
-        {% if page.show_link == true %}
-          <a href="{{ page.url | prepend: site.baseurl }} ">{{ page.title }}</a>
-        {% endif %}
-      {% endfor %}
+<header class="site-header">
+
+  <div class="wrap">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.show_link == true %}
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
     </nav>
+
   </div>
+
 </header>
