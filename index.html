@@ -4,7 +4,7 @@ layout: default
 <main role="main" class="posts">
 {% for post in paginator.posts %}
 			<article>
-				<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }</a></h2>
+				<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 				<time datetime="{{ post.date | date: '%F' }}">Jan 25, 2015</time>
 				<p>{{ post.excerpt }}</p>
 			</article>
