@@ -2,11 +2,11 @@
 title: RCBDev
 email:
 description: "A developers thoughts on all things development. Tutorials, opinions, and random software development thoughts."
-baseurl: "/"
-url: "http://rcbdev.co.uk"
+baseurl: ""
+url: "https://rcbdev.co.uk"
 username: rcbdev
 paginate: 5
-paginate_path: "page:num"
+paginate_path: "/page:num"
 
 # Build settings
 markdown: kramdown
