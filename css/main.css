@@ -213,7 +213,7 @@ article header h1 {
 
 main.post article time {
 	position: absolute;
-	top: 0px;
+	top: -15px;
 	right: 0px;
 	font-size: 0.8em;
 	color: #969696;
