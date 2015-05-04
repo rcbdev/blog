@@ -102,6 +102,7 @@ header nav {
 
 header nav a {
 	color: #f4f4f4;
+	font-family: 'Quicksand',Helvetica,Arial,sans-serif;
 }
 
 header nav a:hover {
