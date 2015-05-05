@@ -9,6 +9,7 @@ body {
 main, header > div, footer > div {
 	max-width: 850px;
 	margin: auto;
+	display: block;
 }
 
 h1, h2 {
